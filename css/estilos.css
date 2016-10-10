@@ -1,0 +1,35 @@
+body{
+	background-color: #d9d7d8;
+	color: #3F7D94;
+}
+
+/*estilos generales del menu*/
+
+nav{
+	background-color: #a1a1a5;
+}
+
+.navbar-default{
+	background-color: #a1a1a5;
+	border-color: 
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #3F7D94;
+}
+
+
+nav .logo{
+	height: 25px;
+	width: 100%;
+}
+
+.dropdown-menu > li > a {
+	color: #3F7D94;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    color: #333;
+    background-color: #a1a1a5;
+}
