@@ -1,12 +1,18 @@
 body{
 	background-color: #d9d7d8;
 	color: #3F7D94;
+	max-width: 1920px;
+	
 }
 
 /*estilos generales del menu*/
 
 nav{
 	background-color: #a1a1a5;
+}
+
+.navbar{
+		margin-bottom:1px;
 }
 
 .navbar-default{
@@ -33,3 +39,14 @@ nav .logo{
     color: #333;
     background-color: #a1a1a5;
 }
+
+/*Estilos Galerias*/
+.carousel{
+
+}
+
+.carousel-inner img{
+	max-height: 500px;
+	max-width: 100%;
+}
+
