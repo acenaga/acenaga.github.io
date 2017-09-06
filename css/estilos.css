@@ -1,8 +1,9 @@
 body{
 	background-color: #d9d7d8;
 	color: #3F7D94;
+	margin-top: 51px;
 	max-width: 1920px;
-	
+
 }
 
 /*estilos generales del menu*/
@@ -17,7 +18,7 @@ nav{
 
 .navbar-default{
 	background-color: #a1a1a5;
-	border-color: 
+	border-color:
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -49,4 +50,3 @@ nav .logo{
 	max-height: 500px;
 	max-width: 100%;
 }
-
