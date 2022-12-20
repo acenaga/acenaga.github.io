@@ -1,40 +1,473 @@
 <!DOCTYPE html>
-<html lang="es">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="es"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<title>Carlos Ferrer</title>
+    <title>Carlos Ferrer - Developer Web</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="p:domain_verify" content="08c9686f603146888d86fb8871577f49"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page de presentacion personal de Carlos Ferrer">
+    <meta name="author" content="Carlos Ferrer">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/css/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/css/github-activity-0.1.4.min.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-	<header>
-		<div class="menu">
-			<div class="contenedor">
-				<div class="logo">Carlos Ferrer</div>
-				<nav>
-					<ul>
-						<li><a href="#">Acerca de mi</a></li>
-						<li><a href="#">Estudios</a></li>
-						<li><a href="#">Proyectos</a></li>
-						<li><a href="#">Experiencia Laboral</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-	<div class="main">
-		<p>prueba real</p>
-	</div>
+    <div class="matrix">
+        <canvas id="canvas"></canvas>
+    </div>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <img class="profile-image img-responsive pull-left img-circle" src="assets/images/profile.jpg" alt="Carlos Ferrer" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Carlos A. Ferrer B.</h1>
+                <h2 class="desc">Desarrollador Web</h2>
+                <h2 class="desc">Frontend, Backend & Mobile Developer</h2>
+                <ul class="social list-inline">
+                    <li><a href="https://twitter.com/acenaga" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/amarillo_cel" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://ve.linkedin.com/in/carlos-alberto-ferrer-boscan-9aa5ab24" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/amarillo69" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.behance.net/acenaga" target="_blank"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="https://github.com/acenaga" target="_blank"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="./assets/documents/CV_Carlos_Ferrer.pdf" target="_blank"><i class="fa fa-paper-plane"></i>Descargar CV</a>
+        </div><!--//container-->
+    </header><!--//header-->
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">Acerca de mi</h2>
+                        <div class="content">
+                            <p>Desarrollador web con capacidad de crear aplicaciones web y moviles que cumplan con los requerimientos del negocio de empresas y emprendimientos.</p>
+                            <p>Conocimientos en el área de soporte técnico a nivel preventivo y correctivo. Competencias para el trabajo  en equipo, atención al cliente y desarrollo de procesos de innovación.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Ultimos Proyectos</h2>
+                        <div class="content">
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="http://www.lilahyoga.com/" target="_blank">Lilah Yoga</a></h3>
+                                <p class="summary">Refrescamiento de Imagen, segun bocetos del diseñador</p>
+                                <div class="featured-image">
+                                    <a href="http://www.lilahyoga.com/" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-featured.png" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">Refresh</div>
+                                        </div>
+                                    </div>
+                                <div class="desc text-left">
+                                    <p>Refrescamiento del sitio de yoga Lilah, en base a bocetos facilitados por el diseñador</p>
+                                    <p>La pagina esta hecha en wordpress, se procedio a trabajar con un template y se modifico segun los requerimientos de el diseñador y la dueña del sitio</p>
+                                </div><!--//desc-->
+                                <a class="btn btn-cta-secondary" href="#" target="_blank"><i class="fa fa-thumbs-o-up"></i>Portafolio</a>
+                            </div><!--//item-->
 
+                            <hr class="divider" />
 
+                            <div id="show-project">
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://invertacoimport.com/" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-9.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="https://invertacoimport.com/" target="_blank">Invertaco S.A. - Desarrollo del website de Invertaco</a></h3>
+                                        <p>Desarrollo de la pagina de Invertaco en base a los mock up del diseñador</p>
+                                        <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i>Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://www.activegear.co/pages/instant-connect" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-8.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="https://www.activegear.co/pages/instant-connect" target="_blank">ActiveGear - Desarrollo de la pagina de instant connect</a></h3>
+                                        <p>Desarrollo de la pagina de instant connect en base a los mock up del diseñador</p>
+                                        <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://www.activegear.co/pages/warranty" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-7.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="https://www.activegear.co/pages/warranty" target="_blank">ActiveGear - Desarrollo de la pagina de warranty</a></h3>
+                                        <p>Desarrollo de la pagina de warranty en base a los mock up del diseñador</p>
+                                        <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://www.venture4th.co/instant-connect" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-6.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="https://www.venture4th.co/instant-connect" target="_blank">Venture 4th - Desarrollo de la pagina de instant-connect</a></h3>
+                                        <p>Desarrollo de la pagina de instant-connect en base a los mock up del diseñador</p>
+                                        <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://www.venture4th.co/warranty" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-5.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="https://www.venture4th.co/warranty" target="_blank">Venture 4th - Desarrollo de la pagina de garantia</a></h3>
+                                        <p>Desarrollo de la pagina de garantia en base a los mock up del diseñador</p>
+                                        <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="http://cariocaactivewear.com/" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="http://cariocaactivewear.com/" target="_blank">Carioca - Desarrollo del front end</a></h3>
+                                        <p>Desarrollo del front end en base a mock up elaborados por el diseñador del equipo de trabajo. Se uso el framework Bootstrap para realizar las respuestas responsive del diseño</p>
+                                        <p><a class="more-link" href="https://www.behance.net/gallery/29348137/Carioca-Activewear" target="_blank"><i class="fa fa-external-link"></i> Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://www.behance.net/gallery/29349785/Grupo-ICEO-(Agency)" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-1.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="https://acenaga.github.io/iceo-agency/" target="_blank">Grupo ICEO - Agency</a></h3>
+                                        <p>Pagina presentada a la empresa Grupo ICEO, la cual se elaboro a partir de una plantilla de libre uso llamada "Agency", la misma esta elaborada con bootstrap, de esa forma se realizaron las modificaciones pertinentes hasta quedar a gusto del cliente. La Pagina esta offline en este momento</p>
+                                        <p><a class="more-link" href="https://acenaga.github.io/iceo-agency/" target="_blank"><i class="fa fa-external-link"></i>Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                                <div class="item row">
+                                    <a class="col-md-4 col-sm-4 col-xs-12" href="https://acenaga.github.io/amantes-del-celuloide/" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-2.png" alt="project name" />
+                                    </a>
+                                    <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                        <h3 class="title"><a href="https://acenaga.github.io/amantes-del-celuloide/" target="_blank">Amantes del Celuloide - en construccion</a></h3>
+                                        <p> Blog de noticias del cine, realizado para los amantes del septimo arte, se utilizo una plantilla llamada "Nova" y se modifico segun los requerimientos del cliente, proyecto actualmente en construccion.</p>
+                                        <p><a class="more-link" href="https://www.behance.net/gallery/29350777/Amantes-del-Celuloide-(En-construccion)" target="_blank"><i class="fa fa-external-link"></i> Portafolio</a></p>
+                                    </div><!--//desc-->
+                                </div><!--//item-->
+                            </div><!--//hide-->
+                            <a id="show" class="btn btn-cta-secondary"><i class="fa fa-chevron-circle-down"></i>Mostrar Mas</a>
 
+                            <a id="hide" class="btn btn-cta-secondary"><i class="fa fa-chevron-circle-down"></i>Mostrar Menos</a>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Otros Proyectos</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://juego-html-acenaga.netlify.com/" target="_blank">Juego de plataformas</a> <span class="label label-theme">Proyecto Personal</span></h3>
+                                <p class="summary">Creacion de un juego de plataformas utilizando las bondades de html5, la libreria de JS react y Kinetic. Actualmente en periodo de desarrollo</p>
+                                <p><a class="more-link" href="https://juego-html-acenaga.netlify.com/" target="_blank"><i class="fa fa-external-link"></i>Conocelo</a></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="https://laravelcrud.carlosferrer.me/" target="_blank">Laravel Crud</a> <span class="label label-theme">Proyecto Personal</span></h3>
+                                <p class="summary">Sencillo proyecto de lista de asistencia, realizado con laravel 5.8 donde se demuestran las posibilidades de un crud de laravel sencillo</p>
+                                <p><a class="more-link" href="https://laravelcrud.carlosferrer.me/" target="_blank"><i class="fa fa-external-link"></i>Conocelo</a></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="https://noticias-app-db02e.web.app/tabs/tab1" target="_blank">Yellows New's (Ionic)</a> <span class="label label-theme">Proyecto Personal</span></h3>
+                                <p class="summary">PWA Desarrollada a partir de una App para moviles de noticas en español, ambos desarrollados con inoic framework (angular). Aun enn desarrollo</p>
+                                <p><a class="more-link" href="https://noticias-app-db02e.web.app/tabs/tab1" target="_blank"><i class="fa fa-external-link"></i>Conocelo</a></p>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Experiencia Laboral</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Full Stack Mobile // 
+                                    <span class="place"> Quilsoft S.A. // Argentina // </span> 
+                                    <span class="year">Nov - 2019 – Actualidad </span>
+                                </h3>
+                                <p>Desarrollo de aplicaciones móviles (Hibridas), usando el framework Ionic (Angular), realizando el Backend con el framework laravel (ver. 5.8). Se desarrollan interfaces en base a mockup elaborados por el diseñador a partir de un template elegido por el.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Desarrollador Web y Soportista Técnico //
+                                    <span class="place"> Venezuela, Panama, Argentina // Ejercicio Independiente // </span>
+                                    <span class="year">May 2007 – Actualidad </span>
+                                </h3>
+                                <p>Desarrollos web, configuración de VPS, mantenimiento, configuración de dominios y hosting de diversos portales.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Desarrollador FrontEnd y BackEnd //
+                                    <span class="place">Global Technology System // Panama.</span> 
+                                    <span class="year">Feb 2017 – Mar 2019 </span>
+                                </h3>
+                                <p>Contratación, configuración y puesta a punto de VPS para desarrollos web. Mantenimiento y pruebas de servidores. Creación de portales para E-Commerce con CRM Konnektive y HasOffers. Reportes y proyecciones de ventas de los diversos portales. Monitoreo y control del desempeño de los portales.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Desarrollador FrontEnd // 
+                                    <span class="place">CrafterSama Studio // Venezuela // </span> 
+                                    <span class="year">Ago 2014 – Nov 2016</span>
+                                </h3>
+                                <p>Maquetación de páginas web acorde al mock up del diseñador. Entrevistas con clientes para el establecimiento de requisitos. Asistencia técnica ante incidencias en la fase de producción de páginas.
+                                </p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Analista de Soporte Técnico // 
+                                    <span class="place"> Grupo ICEO C.A. // Venezuela // </span> 
+                                    <span class="year">Feb 2012 – May 2014</span>
+                                </h3>
+                                <p>Creación del departamento de soporte técnico. Implementación de procesos de planificación y control para el desarrollo de mantenimientos, actualizaciones de los equipos y paquetes de software, así como asistencia a los usuarios. Realizar informe y presentación de resultados</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Técnico de Soporte // 
+                                    <span class="place">Solventar C.A. // Venezuela // </span> 
+                                    <span class="year">May 2008 – May 2009</span>
+                                </h3>
+                                <p>Instalación, pruebas, mantenimiento y actualización de los equipos y programas de software. Brindar asistencia a los clientes internos con las incidencias en el uso de productos y aplicaciones. Llevar indicadores de resultados y realizar informes técnicos.</p>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner">
+                        <h2 class="heading">Mi GitHub</h2
+                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Informacion Basica</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Ubicacion:</span>Ciudad Autónoma de Buenos Aires, Argentina</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">mundofuturoca@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Sitio Web:</span><a href="#">http://www.mundo-futuro.com</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Habilidades</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Como desarrollador web, estoy en constante aprendizaje de mis habilidades, y como soportista tecnico tengo una gran experiencia.</p>
 
+                            <div class="skillset">
 
+                                <div class="item">
+                                    <h3 class="level-title">HTML5 &amp; CSS3<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Avanzado</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
 
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Medio</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                                <div class="item">
+                                    <h3 class="level-title">PHP &amp; Mysql<span class="level-label">Medio</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Bootstrap<span class="level-label">Medio</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="65%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Laravel<span class="level-label">Medio</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="40%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Ionic<span class="level-label">Principiante</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="25%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Angular<span class="level-label">Principiante</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="25%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Wordpress<span class="level-label">Medio</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="65%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Soporte Tecnico<span class="level-label">Experto</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Redes LAN y WAN<span class="level-label">Avanzado</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonios</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">
+                                    <p><i class="fa fa-quote-left"></i>En construccion!!</p>
+                                </blockquote>
+                                <p class="source"><span class="name">Jon Doe</span><br /><span class="title">Curabitur commodo</span></p>
+                            </div><!--//item-->
+
+                            <p><a class="more-link" href="https://ve.linkedin.com/in/carlos-alberto-ferrer-boscan-9aa5ab24"><i class="fa fa-external-link"></i>Linkedin</a></p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Educacion</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> TSU en Informatica</h3>
+                                <h4 class="university">Tecnoloogico Redic UNIR <span class="year">(2012-2015)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i>Diplomatura Webmaster</h3>
+                                <h4 class="university">Universidad Rafael Belloso Chacin <span class="year">(2015)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i>IT and Networking Fundamentals</h3>
+                                <h4 class="university">IBM Advanced Career Education<span class="year">(2007)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Lenguajes</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Español:</strong></span>
+                                    <span class="level">Hablante Nativo<br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Ingles:</strong></span>
+                                    <span class="level">Competencia Profesional<br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                <aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">ultimos Post del blog</h2>
+                        <div id="rss-feeds" class="content">
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Musica favorita para programar</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" target="_blank">Mark Ronson - Uptown Funk ft. Bruno Mars</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=3MteSlpxCpo" target="_blank">Daft Punk - Pentatonix</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=OglS3Q0Zxik" target="_blank">Can't Hold Us - Pentatonix (Macklemore &amp; Ryan Lewis cover)</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=Rx1xCKoYPQo" target="_blank">El chojin - Superheroe</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                <aside class="list conferences aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Conferencias</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-calendar"></i> <a href="https://www.instagram.com/p/BHPXCuBhvgk/?taken-by=infourbe" target="_blank">Marketing 3.0 - 2016</a>(URBE Maracaibo)</li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+            </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.smoove.js"></script>
+    <script type="text/javascript" src="assets/plugins/matrix.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="assets/plugins/github-activity/js/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/js/github-activity-0.1.4.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
